@@ -12,10 +12,11 @@ public class Calculator {
 		Stack<String> postFixExp = new Stack<String>();
 		PostFixConversion pf = new PostFixConversion();
 		postFixExp = pf.postFixConversion(expression);
-		while(!postFixExp.isEmpty()) {
+	/*	while(!postFixExp.isEmpty()) {
 			System.out.println("inside CAlc"+postFixExp.pop());
-		}
+		}*/
 		System.out.println(postFixExp);
+		ResultCalculation.postFixToResult(postFixExp);
 		return finalValue;
 	}
 
